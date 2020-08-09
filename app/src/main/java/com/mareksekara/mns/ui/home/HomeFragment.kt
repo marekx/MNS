@@ -6,7 +6,6 @@ import com.mareksekara.mns.R
 import com.mareksekara.mns.databinding.FragmentHomeBinding
 import com.mareksekara.mns.ui.base.BaseFragment
 
-
 class HomeFragment : BaseFragment<FragmentHomeBinding, HomeViewModel>() {
 
     override fun getFragmentView() = R.layout.fragment_home
