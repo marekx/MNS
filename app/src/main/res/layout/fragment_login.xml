@@ -26,7 +26,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#ffff"
+                android:backgroundTint="@color/colorDirtyWhite"
                 android:drawableStart="@drawable/ic_user"
                 android:drawablePadding="@dimen/padding_small"
                 android:drawableTint="@color/colorDirtyWhite"
