@@ -65,7 +65,7 @@
             android:layout_gravity="end"
             android:layout_marginTop="@dimen/margin_medium"
             android:text="@string/login_forgot_password"
-            android:textColor="#ffffff"
+            android:textColor="@color/colorDirtyWhite"
             android:textSize="16sp" />
 
         <com.google.android.material.button.MaterialButton
