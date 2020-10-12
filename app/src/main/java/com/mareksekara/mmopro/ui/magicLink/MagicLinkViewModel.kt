@@ -7,6 +7,7 @@ import android.view.inputmethod.EditorInfo
 import android.widget.TextView
 import android.widget.Toast
 import androidx.databinding.ObservableBoolean
+import androidx.databinding.adapters.TextViewBindingAdapter
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.ActionCodeSettings
 import com.google.firebase.auth.ktx.auth
@@ -27,18 +28,10 @@ class MagicLinkViewModel : ViewModel(){
         }
     }
 
-    fun emailAddressTextWatcher() : TextWatcher {
-        return object : TextWatcher {
-            override fun beforeTextChanged(charSequence: CharSequence?, start: Int, before: Int, count: Int) {
-            }
-
-            override fun onTextChanged(charSequence: CharSequence?, start: Int, before: Int, count: Int) {
-                userEmailAddress = charSequence.toString()
-                buttonEnabled.set(charSequence?.isNotEmpty() ?: false)
-            }
-
-            override fun afterTextChanged(editable: Editable?) {
-            }
+    fun emailAddressTextChange() : TextViewBindingAdapter.OnTextChanged {
+        return TextViewBindingAdapter.OnTextChanged { charSequence, _, _, _ ->
+            userEmailAddress = charSequence.toString()
+            buttonEnabled.set(charSequence?.isNotEmpty() ?: false)
         }
     }
 
