@@ -1,4 +1,4 @@
-package com.mareksekara.mns.ui.base
+package com.mareksekara.mmopro.ui.base
 
 import android.os.Bundle
 import android.view.LayoutInflater

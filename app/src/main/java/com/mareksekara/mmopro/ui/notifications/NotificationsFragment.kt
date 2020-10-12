@@ -1,10 +1,10 @@
-package com.mareksekara.mns.ui.notifications
+package com.mareksekara.mmopro.ui.notifications
 
 import android.os.Bundle
 import androidx.lifecycle.Observer
-import com.mareksekara.mns.R
-import com.mareksekara.mns.databinding.FragmentNotificationsBinding
-import com.mareksekara.mns.ui.base.BaseFragment
+import com.mareksekara.mmopro.R
+import com.mareksekara.mmopro.databinding.FragmentNotificationsBinding
+import com.mareksekara.mmopro.ui.base.BaseFragment
 
 class NotificationsFragment : BaseFragment<FragmentNotificationsBinding, NotificationsViewModel>() {
 

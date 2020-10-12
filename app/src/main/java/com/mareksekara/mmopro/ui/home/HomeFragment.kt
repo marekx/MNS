@@ -1,10 +1,10 @@
-package com.mareksekara.mns.ui.home
+package com.mareksekara.mmopro.ui.home
 
 import android.os.Bundle
 import androidx.lifecycle.Observer
-import com.mareksekara.mns.R
-import com.mareksekara.mns.databinding.FragmentHomeBinding
-import com.mareksekara.mns.ui.base.BaseFragment
+import com.mareksekara.mmopro.R
+import com.mareksekara.mmopro.databinding.FragmentHomeBinding
+import com.mareksekara.mmopro.ui.base.BaseFragment
 
 class HomeFragment : BaseFragment<FragmentHomeBinding, HomeViewModel>() {
 

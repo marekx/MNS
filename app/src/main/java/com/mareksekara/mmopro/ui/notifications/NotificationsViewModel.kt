@@ -1,4 +1,4 @@
-package com.mareksekara.mns.ui.notifications
+package com.mareksekara.mmopro.ui.notifications
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

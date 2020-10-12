@@ -1,10 +1,9 @@
-package com.mareksekara.mns.ui.login
+package com.mareksekara.mmopro.ui.login
 
 import android.os.Bundle
-import androidx.lifecycle.Observer
-import com.mareksekara.mns.R
-import com.mareksekara.mns.databinding.FragmentLoginBinding
-import com.mareksekara.mns.ui.base.BaseFragment
+import com.mareksekara.mmopro.R
+import com.mareksekara.mmopro.databinding.FragmentLoginBinding
+import com.mareksekara.mmopro.ui.base.BaseFragment
 
 class LoginFragment : BaseFragment<FragmentLoginBinding, LoginViewModel>() {
 

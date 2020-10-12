@@ -1,10 +1,10 @@
-package com.mareksekara.mns.ui.dashboard
+package com.mareksekara.mmopro.ui.dashboard
 
 import android.os.Bundle
 import androidx.lifecycle.Observer
-import com.mareksekara.mns.R
-import com.mareksekara.mns.databinding.FragmentDashboardBinding
-import com.mareksekara.mns.ui.base.BaseFragment
+import com.mareksekara.mmopro.R
+import com.mareksekara.mmopro.databinding.FragmentDashboardBinding
+import com.mareksekara.mmopro.ui.base.BaseFragment
 
 class DashboardFragment : BaseFragment<FragmentDashboardBinding, DashboardViewModel>() {
 

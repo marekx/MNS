@@ -1,4 +1,4 @@
-package com.mareksekara.mns.ui.mainActivity
+package com.mareksekara.mmopro.ui.mainActivity
 
 import androidx.lifecycle.ViewModel
 

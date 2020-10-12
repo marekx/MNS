@@ -1,4 +1,4 @@
-package com.mareksekara.mns
+package com.mareksekara.mmopro
 
 import org.junit.Test
 

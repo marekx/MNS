@@ -1,4 +1,4 @@
-package com.mareksekara.mns.ui.base
+package com.mareksekara.mmopro.ui.base
 
 import androidx.lifecycle.ViewModel
 

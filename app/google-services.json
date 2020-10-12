@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "969187437822",
+    "firebase_url": "https://mmo-pro.firebaseio.com",
+    "project_id": "mmo-pro",
+    "storage_bucket": "mmo-pro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969187437822:android:fe51c50056cbe6b0bd49af",
+        "android_client_info": {
+          "package_name": "com.mareksekara.mmopro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969187437822-52vhstboattimcbvuqeu3io23j091p7v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mareksekara.mmopro",
+            "certificate_hash": "8c25144de5342b9ece0075152cfad61038b80f18"
+          }
+        },
+        {
+          "client_id": "969187437822-qftfu4jq3ql620l289p2nmariooa0bmo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1a_QVwnwESomBNrnyt19iNAK9n6WzID8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969187437822-qftfu4jq3ql620l289p2nmariooa0bmo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
