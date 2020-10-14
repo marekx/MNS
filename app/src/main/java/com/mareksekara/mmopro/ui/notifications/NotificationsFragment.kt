@@ -15,8 +15,12 @@ class NotificationsFragment : BaseFragment<FragmentNotificationsBinding, Notific
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        viewModel.text.observe(viewLifecycleOwner, Observer {
+        viewModel.text.observe(viewLifecycleOwner, {
             binding.textNotifications.text = it
         })
+    }
+
+    override fun getNavViewVisible(): Boolean {
+        return false
     }
 }

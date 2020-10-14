@@ -15,8 +15,12 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeViewModel>() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        viewModel.text.observe(viewLifecycleOwner, Observer {
+        viewModel.text.observe(viewLifecycleOwner, {
             binding.textHome.text = it
         })
+    }
+
+    override fun getNavViewVisible(): Boolean {
+        return true
     }
 }

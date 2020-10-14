@@ -14,4 +14,8 @@ class MagicLinkFragment : BaseFragment<FragmentMagicLinkBinding, MagicLinkViewMo
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
     }
+
+    override fun getNavViewVisible(): Boolean {
+        return false
+    }
 }

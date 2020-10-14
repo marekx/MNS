@@ -11,9 +11,7 @@ class LoginFragment : BaseFragment<FragmentLoginBinding, LoginViewModel>() {
 
     override fun getViewModel() = LoginViewModel::class.java
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-
-
+    override fun getNavViewVisible(): Boolean {
+        return false
     }
 }

@@ -15,8 +15,12 @@ class DashboardFragment : BaseFragment<FragmentDashboardBinding, DashboardViewMo
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        viewModel.text.observe(viewLifecycleOwner, Observer {
+        viewModel.text.observe(viewLifecycleOwner, {
             binding.textDashboard.text = it
         })
+    }
+
+    override fun getNavViewVisible(): Boolean {
+        return true
     }
 }

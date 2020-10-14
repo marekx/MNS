@@ -9,6 +9,7 @@ import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.mareksekara.mmopro.ui.mainActivity.MainActivity
 
 
 abstract class BaseFragment<T : ViewDataBinding, VM : ViewModel> : Fragment() {
@@ -27,6 +28,10 @@ abstract class BaseFragment<T : ViewDataBinding, VM : ViewModel> : Fragment() {
             container,
             false
         )
+
+        val activity: MainActivity = activity as MainActivity
+        activity.setNavBarVisible(getNavViewVisible())
+
         viewModel = ViewModelProvider(this).get(getViewModel())
         return binding.root
     }
@@ -34,5 +39,7 @@ abstract class BaseFragment<T : ViewDataBinding, VM : ViewModel> : Fragment() {
     abstract fun getFragmentView(): Int
 
     abstract fun getViewModel(): Class<VM>
+
+    abstract fun getNavViewVisible(): Boolean
 
 }
