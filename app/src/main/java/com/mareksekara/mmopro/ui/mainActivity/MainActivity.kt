@@ -14,11 +14,13 @@ import androidx.transition.Slide
 import androidx.transition.TransitionManager
 import com.mareksekara.mmopro.R
 import com.mareksekara.mmopro.databinding.ActivityMainBinding
+import com.mareksekara.mmopro.ui.login.LoginFragment
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var fragmentManager: FragmentManager
+    private lateinit var navHostFragment: NavHostFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,11 +36,12 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+        navHostFragment.navController.navigate(R.id.navigation_login)
     }
 
     private fun setupNavBar(){
 
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
 
         setupActionBarWithNavController(
             navHostFragment.navController,
